@@ -1,0 +1,47 @@
+<form #frm="ngForm" action="/action_page.php" style="text-align:center">
+  Item: <input type="text" [(ngModel)]="item" name="item" /><br /><br />
+  Quantity: <input type="text" [(ngModel)]="qty" name="qty" /><br /><br />
+  <label for="unit">Unit </label>
+  <select [(ngModel)]="unit" name="unit" placeholder="">
+    <option value="Gallon">Gallon</option>
+    <option value="Tray">Tray</option>
+    <option value="Kilogram">Kilogram</option>
+    <option value="Box">Box</option>
+    <option value="Liters">Liters</option></select
+  ><br /><br />
+  <button class="btn success" (click)="addItem(frm.value)">Add</button>
+</form>
+
+<br />
+<br />
+<div class="box" *ngFor="let x of nameOfList; let id = index">
+  <img
+    class="img"
+    src="https://www.pngitem.com/pimgs/m/33-338317_akf0049-shopping-trolley-icon-cute-shopping-cart-icon.png"
+  />
+  <h1 id="{{ id }}">{{ x.item }}</h1>
+  <p>
+    {{ x.qty }}
+  </p>
+  <p>
+    {{ x.unit }}
+  </p>
+  <button (click)="done(id)">
+    <img
+      class="imgs"
+      src="https://uxwing.com/wp-content/themes/uxwing/download/48-checkmark-cross/success-green-check-mark.png"
+    />
+  </button>
+  <button (click)="undone(id)">
+    <img
+      class="imgs"
+      src="https://www.pinclipart.com/picdir/big/53-536663_turn-arrow-icon-png-yellow-clipart.png"
+    />
+  </button>
+  <button (click)="remove(id)">
+    <img
+      class="imgs"
+      src="https://cdn.iconscout.com/icon/premium/png-256-thumb/trash-can-10-1154269.png"
+    />
+  </button>
+</div>

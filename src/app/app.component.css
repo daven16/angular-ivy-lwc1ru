@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+  font-family: cursive;
+  background-color: aqua;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}

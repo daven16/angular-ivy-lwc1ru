@@ -1,0 +1,44 @@
+.box {
+  width: 80%;
+  height: auto;
+  background-color: rgb(236, 231, 231);
+  border-left: 15px solid rgb(204, 101, 11);
+  margin-bottom: 10px;
+  padding: 4px;
+  color: rgb(112, 112, 112);
+  border-radius: 15px 50px 30px 10px;
+}
+
+.img {
+  width: 50px;
+}
+.imgs {
+  width: 20px;
+}
+.imgss {
+  width: 20px;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: cursive;
+}
+
+.btn {
+  font-size: 14px;
+  font-family: cursive;
+  color: white;
+  border: none;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+}
+.success {
+  background-color: #04aa6d;
+}
+.success:hover {
+  background-color: #46a049;
+}
